@@ -12,7 +12,7 @@ plot2 <- function(){
      
      # Check if file has been downloaded to working directory
      # If not, the file is downloaded then unzipped
-     if (!file.exists(filename)){
+     if (!file.exists(filename2)){
           download.file(url="https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip", destfile=filename) 
           datedownload <- date()
           unzip(filename)
